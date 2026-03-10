@@ -1,0 +1,138 @@
+@use "variables" as *;
+
+.header {
+  padding: 40px 0 20px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin: 0;
+  }
+
+  &__img {
+    display: block;
+    width: 180px;
+    height: auto;
+  }
+}
+
+.main-visual {
+  margin: 0 auto 60px;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.index {
+  background: $color-light;
+  padding: 60px 0;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    border: 1px solid $color-border;
+    padding: 40px;
+    margin: 0 40px;
+    text-align: center;
+  }
+
+  &__list {
+    display: inline-block;
+    text-align: left;
+    list-style: decimal;
+    list-style-position: inside;
+  }
+
+  &__cards {
+    line-height: 1.8;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.gallery {
+  padding: 60px 0;
+
+  &__inner {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__left,
+  &__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.detail {
+  padding: 60px 0;
+  background: $color-light;
+
+  &__inner {
+    display: flex;
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  &__left {
+    flex: 1;
+    border-right: 1px solid $color-border;
+    padding-right: 40px;
+  }
+
+  &__right {
+    flex: 2;
+  }
+
+  &__row {
+    margin-bottom: 16px;
+
+    dt {
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+
+  &__link {
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.footer {
+  padding: 40px 0 0;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: $color-border;
+}

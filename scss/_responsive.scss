@@ -1,0 +1,43 @@
+@use "mixins" as *;
+
+@include mq-tablet {
+  .wrapper-wide {
+    padding: 0;
+  }
+
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header {
+    &__inner {
+      padding-left: 10px;
+    }
+  }
+
+  .index,
+  .detail {
+    margin: 0 20px;
+  }
+
+  .gallery {
+    &__inner {
+      flex-direction: column;
+    }
+  }
+
+  .detail {
+    &__inner {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__left {
+      border-right: none;
+      border-bottom: 1px solid #777;
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+  }
+}
